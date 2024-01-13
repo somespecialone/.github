@@ -7,9 +7,6 @@ body:
   - type: markdown
     attributes:
       value: "## Thank you for contributing to the project! ✊"
-  - type: markdown
-    attributes:
-      value: And please, make sure there are no issues for this topic.
 
   - type: checkboxes
     id: checks
@@ -26,7 +23,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: | 
+      description: >
         Please provide a brief description of what you want to do, what has happened, and what should happen.
       placeholder: Doing this '...' That way '...' Got next '...' Expected else '...'
     validations:
