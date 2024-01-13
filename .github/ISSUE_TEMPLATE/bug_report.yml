@@ -29,7 +29,6 @@ body:
       description: | 
         Please provide a brief description of what you want to do, what has happened, and what should happen.
       placeholder: Doing this '...' That way '...' Got next '...' Expected else '...'
-      render: Markdown
     validations:
       required: true
 
@@ -48,7 +47,6 @@ body:
         5. Call '...' method
         4. See error
         5. '...'
-      render: Markdown
     validations:
       required: true
 
@@ -61,7 +59,7 @@ body:
         - OS: ...
         - Python/Node: ...
         - ... : ...
-      render: Markdown
+      render: Text
     validations:
       required: true
 
