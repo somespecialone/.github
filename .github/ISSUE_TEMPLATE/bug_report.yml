@@ -1,0 +1,74 @@
+name: 🐛 Bug
+description: Report a bug or unexpected behavior
+labels: [ bug ]
+assignees: [ somespecialone ]
+
+body:
+  - type: markdown
+    attributes:
+      value: "## Thank you for contributing to the project! ✊"
+  - type: markdown
+    attributes:
+      value: And please, make sure there are no issues for this topic.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Initial Checks
+      description: Few checks to make sure you need to create a bug report.
+      options:
+        - label:  I have searched the existing issues for a duplicate and I'm sure this is something new
+          required: true
+        - label: I am confident that the issue in the project code
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: | 
+        Please provide a brief description of what you want to do, what has happened, and what should happen.
+      placeholder: Doing this '...' That way '...' Got next '...' Expected else '...'
+      render: Markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps To Reproduce
+      description: >
+        Add a self-contained,
+        [minimal, reproducible example](https://stackoverflow.com/help/minimal-reproducible-example)
+        demonstrating the bug.
+      placeholder: | 
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        5. Call '...' method
+        4. See error
+        5. '...'
+      render: Markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Which version of Operating System, Associated Runtime and project are you using?
+      placeholder: |
+        - OS: ...
+        - Python/Node: ...
+        - ... : ...
+      render: Markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: | 
+        There You can show any additional information such as logs, screenshots,
+        scenarios in which the bug occurs so that it facilitates resolving the issue.
