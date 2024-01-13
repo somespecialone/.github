@@ -1,0 +1,39 @@
+name: 🌟 Feature Request
+description: Request or suggest a new feature or enhancement
+labels: [ enhancement ]
+assignees: [ somespecialone ]
+
+body:
+  - type: markdown
+    attributes:
+      value: "## Thank you for contributing to the project! ✊"
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Initial Checks
+      description: Few checks to make sure you need to create a feature request or suggestion.
+      options:
+        - label:  I have searched the existing requests for a duplicate and I'm sure this is something new
+          required: true
+        - label: I have read and followed the documentation (if possible) and still think this feature is missing
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: > 
+        Please provide a brief description of the feature or enhancement you would like to see in the project.
+        There can be a demo of how code might look when using the feature, your use case for the feature,
+        why the feature should be added (as opposed to another project or just implemented in your code)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: >
+        There You can show any additional information on the feature request like proposed solutions,
+        links, screenshots, etc.
