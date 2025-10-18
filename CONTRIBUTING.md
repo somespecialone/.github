@@ -25,5 +25,3 @@ Whether it’s fixing a bug, adding a feature, or improving docs — every bit h
 
 * Before opening a new issue, check if it already exists.
 * When reporting a bug or suggesting a feature, describe it clearly and include steps or context.
-
-Notes, that `contributions are reviewed before merging — please be patient.
